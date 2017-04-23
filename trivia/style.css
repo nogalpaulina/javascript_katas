@@ -1,0 +1,110 @@
+body {
+	background-image: url(chalkboard.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	margin-top: 4em !important;
+	min-height: 600px;
+    color: #fff !important;
+}
+
+.navigation {
+    border-bottom: 2px solid rgba(250, 250, 250, 0.7);
+}
+
+#trivia-container {
+	background-color: rgba(0,0,0, 0.2);
+	position: relative;
+font-family: 'Advent Pro', serif;
+	padding: 1.5em 1.5em;
+}
+
+#quiz-title {
+    font-family: 'Barrio', cursive;
+    text-align: center;
+    font-size: 70px;
+    color: #c73d1f;
+    margin: -10px auto 20px auto;
+}
+
+h1 {
+    font-size: 24px !important;
+    margin-bottom: 20px !important;
+    margin-top: 23px !important;
+}
+
+h2 {
+    color: #fff;
+}
+
+.option h4 {
+    background: rgba(250, 250, 250, 0.3);
+    padding: 5px 5px;
+    font-size: 15px;
+    text-align: center;
+    min-height: 61px;
+}
+
+.option-label {
+    color: #eaeaea; 
+    font-size: 20px;
+}
+
+ul {
+	list-style-type: upper-alpha;
+}
+
+li {
+    background: rgba(250, 250, 250, 0.1);
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 2;
+    margin: 10px 0px;
+    padding-left: 15px;
+    transition-duration: 0.3s;
+}
+
+li:hover {
+	color: #eaeaea;
+    background: rgba(250, 250, 250, 0.2);
+}
+
+#bottom-nav {
+    text-align: center;
+}
+
+.correctGuess {
+	color: #5fcc4c;
+	font-weight: bold;
+}
+
+button {
+	border: 0px;
+	padding: 10px 28px;
+	border-radius: 20px 0px 20px 0px;
+	background-color: #b6452c;
+	margin: 0.5em 0em 0.7em 0em !important;
+	font-size: 18px !important;
+	color: white !important;
+}
+
+button:hover {
+	background-color: #a32e14;
+}
+
+/* Forward */
+.hvr-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}
