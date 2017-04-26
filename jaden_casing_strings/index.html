@@ -5,11 +5,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <style>
     body {
-      background-color: #ffdb65;
-    }
-    
-    p {
-      font-size: 18px;
+      background-color: #ca65ff;
     }
     
     .form-control {
@@ -23,21 +19,21 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-offset-2 col-md-8">
-        <h1>Descending Order</h1>
-        <p>Rearrange the digits to create the highest possible number.</p>
-        <input class="form-control" type="number" name="number" id="number"/>
-        <button class="btn btn-default" type="submit" id="submit">Let's do it!</button>
-        <h2 id="answer"></h2>
+        <h1>Jaden Casing Strings</h1>
+        <p>Type a sentence, favorite quote, or anything you want, and I'll make each of the word's first letter capitalized!</p>
+        <input class="form-control" type="text" name="text" id="sentence"/>
+        <button class="btn btn-default" type="submit" id="submit">Capitalize it!</button>
+        <h2 id="result"></h2>
       </div>
     </div>
   </div>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('submit').addEventListener('click', function() {
-        var number = parseInt(document.getElementById('number').value); 
-         document.getElementById('answer').innerHTML = parseInt(number.toString().split('').sort().reverse().join(''));
+        var sentence = document.getElementById('sentence').value;
+         document.getElementById('result').innerHTML = sentence.split(" ").map(word => word[0].toUpperCase() + word.substring(1, word.length)).join(" ");
+        });
       });
-    });
   </script>
 </body>
 </html>
