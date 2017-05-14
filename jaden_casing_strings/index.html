@@ -2,42 +2,23 @@
 <html>
 <head>
   <title>Project JavaScript</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <style>
-    body {
-      background-color: #ca65ff;
-    }
-    
-    p {
-      font-size: 18px;
-    }
-    
-    .form-control {
-      width: 50%;
-      float: left;
-      margin-right: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container-fluid">
+   <div class="container">
     <div class="row">
-      <div class="col-md-offset-2 col-md-8">
+      <div class="col">
         <h1>Jaden Casing Strings</h1>
-        <p>Type a sentence, favorite quote, or anything you want, and I'll make each of the word's first letter capitalized!</p>
+        <p>Type a sentence, favorite quote, or anything you want, and I'll make every word's first letter capitalized!</p>
         <input class="form-control" type="text" name="text" id="sentence"/>
-        <button class="btn btn-default" type="submit" id="submit">Capitalize it!</button>
+        <button type="submit" id="submit">Capitalize it!</button>
         <h2 id="result"></h2>
       </div>
     </div>
   </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      document.getElementById('submit').addEventListener('click', function() {
-        var sentence = document.getElementById('sentence').value;
-         document.getElementById('result').innerHTML = sentence.split(" ").map(word => word[0].toUpperCase() + word.substring(1, word.length)).join(" ");
-        });
-      });
-  </script>
+   <footer>
+    <a href="www.paulinanogal.com" class="link">Created by Paulina Nogal</a>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

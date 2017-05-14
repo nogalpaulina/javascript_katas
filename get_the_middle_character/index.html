@@ -2,44 +2,24 @@
 <html>
 <head>
   <title>Project JavaScript</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <style>
-    body {
-      background-color: #b8ff65;
-    }
-    
-    p {
-      font-size: 18px;
-    }
-    
-    .form-control {
-      width: 50%;
-      float: left;
-      margin-right: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600" rel="stylesheet">
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div class="col-md-offset-2 col-md-8">
+      <div class="col">
         <h1>Get the Middle Character</h1>
         <p>Given a word return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.</p>
         <input class="form-control" type="text" name="word" id="word"/>
-        <button class="btn btn-default" type="submit" id="submit">Let's do it!</button>
+        <button type="submit" id="submit">Let's do it!</button>
         <h2 id="result"></h2>
       </div>
     </div>
   </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      document.getElementById('submit').addEventListener('click', function() {
-        var word = document.getElementById('word').value;
-        var middleIndex = Math.floor(word.length / 2);
-        console.log(word);
-        document.getElementById('result').innerHTML = (word.length % 2 === 0 ? word.substring(middleIndex - 1, middleIndex + 1) : word[middleIndex]);
-      });
-    });
-  </script>
+  <footer>
+    <a href="www.paulinanogal.com" class="link">Created by Paulina Nogal</a>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
